@@ -32,3 +32,12 @@ console.log(x);
 //symbol
 let id = Symbol("id");
 console.log(typeof(id));
+
+var name ="pooja";
+console.log(typeof(name));
+
+let n1=3;
+let n2=4;
+let n3=n1+n2;
+console.log(n3);
+
