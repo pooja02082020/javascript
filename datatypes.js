@@ -41,3 +41,12 @@ let n2=4;
 let n3=n1+n2;
 console.log(n3);
 
+let num =12;
+let firstName = "Sushma";
+// -sinlge line comment
+/*
+multi -line comment
+*/
+
+
+
