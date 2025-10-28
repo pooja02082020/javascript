@@ -58,3 +58,12 @@ console.log(p*r);
 console.log(p/r);
 console.log(p%r);
 
+console.log(true+1);  //2 --type coersion
+
+//logical operators
+let age = 25;
+let marks =90;
+console.log(age>20&&marks<100)
+
+console.log(age>20||marks<10)  //true if at least one conditions is true
+console.log(!(age>30));
