@@ -44,3 +44,9 @@ let a="something";
 console.log(a/2);
 
 console.log(typeof(a/2)); //NaN itself is a type of number
+
+
+//prompt()
+let age = prompt("Enter your age:");
+console.log(age);
+console.log(typeof(age));
