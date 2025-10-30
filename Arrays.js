@@ -111,10 +111,40 @@ let newFilteredArr = nums.filter((num) => {
 console.log("Original Array", nums);
 console.log("New Array from FilteredArray", newFilteredArr);
 
-let names = ["Birendra","Pooja","Sushma","Bhuwana","Abhisekh","John","Sarah"];
-let longNames = names.filter((name)=>{
+let names = ["Birendra", "Pooja", "Sushma", "Bhuwana", "Abhisekh", "John", "Sarah"];
+let longNames = names.filter((name) => {
     return name.length > 5
 })
 
 console.log(names);
 console.log(longNames);
+
+//reduce() method
+// Array.reduce((accumulator,currentValue,index,Array)=>{
+//code to run
+// }, initialValue)
+
+const number = [2, 3, 5, 6, 10, 20, 30];
+let initialValue = 0;
+let total = number.reduce((acc, curr) => {
+    return acc + curr;
+}, initialValue);
+
+console.log(total);
+// 
+
+//to find largest number from array
+const numb = [2, 3, 5, 4, 55, 6, 10, 20, 30];
+let initialValue1 = 0;
+let largest = numb.reduce((acc, curr) => {
+    return acc>curr?acc:curr  //checks if acc is greateer than curr , if acc>curr get value of acc if not greater get the value of curr
+}, initialValue1)
+
+console.log(largest);
+
+//to find the smallest number using reduce method
+let initialVal = 100;
+let smallest = numb.reduce((acc, curr) => {
+    return acc<curr?acc:curr  //checks if ac
+}, initialVal)
+console.log(smallest);

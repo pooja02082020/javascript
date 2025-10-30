@@ -1,0 +1,29 @@
+let student = {
+    fName: "Pooja",
+    id: 1,
+    age: 22,
+    country: "Nepal"
+}
+
+//object.keys()
+let keysArr = Object.keys(student) //returns an array
+console.log(keysArr)
+
+Object.keys(student).forEach((key) => {
+    console.log(key, ":", student[key])
+})
+
+//Object.values
+let valuesArr = Object.values(student)
+console.log(valuesArr)
+
+let scores = {
+    maths: 90,
+    english: 88,
+    CS: 95
+}
+let totalMarks = Object.values(scores).reduce((sum,val)=>{
+    return sum+val;
+},0)
+
+console.log(totalMarks)
