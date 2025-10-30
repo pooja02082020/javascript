@@ -87,7 +87,34 @@ fruits.forEach((fruit, i, array) => { //we caan also use arrow function
     console.log(fruit, "at index: ", i)
 })
 
-let nums = [1, 2, 3, 4]
-nums.forEach((num) => {
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+let newArray = nums.forEach((num) => {
     console.log(num * num);
 })
+console.log(newArray); //undefined output as foreach doesnot return new array
+
+//Map() method
+let newArrFromMap = nums.map((currentValue, index, array) => {
+    return currentValue * 2;
+})
+console.log("Original Array", nums);
+console.log("New Array from Map", newArrFromMap);
+
+//Filter() method
+//let nums = [1, 2, 3, 4, 5, 6,7,8,9]
+
+//nums.filter((currentValue, index, array) => {});
+let newFilteredArr = nums.filter((num) => {
+    return num % 2 === 0;
+    //return num>5
+})
+console.log("Original Array", nums);
+console.log("New Array from FilteredArray", newFilteredArr);
+
+let names = ["Birendra","Pooja","Sushma","Bhuwana","Abhisekh","John","Sarah"];
+let longNames = names.filter((name)=>{
+    return name.length > 5
+})
+
+console.log(names);
+console.log(longNames);
