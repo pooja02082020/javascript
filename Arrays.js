@@ -134,10 +134,10 @@ console.log(total);
 // 
 
 //to find largest number from array
-const numb = [2, 3, 5, 4, 55, 6, 10, 20, 30];
+const numb = [3, 5, 4, 55, 6, 10, 20, 2, 30];
 let initialValue1 = 0;
 let largest = numb.reduce((acc, curr) => {
-    return acc>curr?acc:curr  //checks if acc is greateer than curr , if acc>curr get value of acc if not greater get the value of curr
+    return acc > curr ? acc : curr  //checks if acc is greateer than curr , if acc>curr get value of acc if not greater get the value of curr
 }, initialValue1)
 
 console.log(largest);
@@ -145,6 +145,6 @@ console.log(largest);
 //to find the smallest number using reduce method
 let initialVal = 100;
 let smallest = numb.reduce((acc, curr) => {
-    return acc<curr?acc:curr  //checks if ac
+    return acc < curr ? acc : curr  //checks if acc -2
 }, initialVal)
 console.log(smallest);

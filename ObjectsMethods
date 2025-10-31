@@ -27,3 +27,30 @@ let totalMarks = Object.values(scores).reduce((sum,val)=>{
 },0)
 
 console.log(totalMarks)
+
+//Object.entries()
+let kv = Object.entries(student);
+console.log(kv)
+
+//Object.freeze()
+
+console.log(student)
+
+//Object.freeze(student)
+
+//object.seal()
+Object.seal();
+student.city= "DH";
+student.age=22;
+delete student.id;
+console.log(student)
+
+for (let key in student){
+    console.log(key,":",student[key])
+}
+
+
+let arr =[1,2,4,6,7,3,6,8]
+for(let index in arr){
+    console.log(index)  //it returns index od an array
+}
