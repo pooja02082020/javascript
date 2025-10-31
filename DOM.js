@@ -25,3 +25,8 @@ console.log(divs);
 //innerText
 let para =document.querySelector("#ptag")
 console.log(para.innerText);
+
+para.textContent = "Welcome to my Webpage and we are overriding the content of paragraph"
+
+
+para.innerHTML = "Welcome here. Lets do <b>something </b> here"
